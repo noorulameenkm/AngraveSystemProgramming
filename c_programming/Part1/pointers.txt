@@ -1,0 +1,17 @@
+1. Declaration
+    -> You have to decalre a pointer like Type *var_name (ex:- int *ptr1)
+2. Pointer Arithmetic
+    -> You can add integer to the pointer, then that pointer will be moved that much bytes ahead
+        (bytes in the sense if you are adding 2 to a char pointer then it will move exactly 2 bytes
+         ahead, because char will take one byte, if it is int pointer, then it will move 2*byte of
+         an int, mostly 2*4 bytes ahead)
+3. Details
+    -> Pointers are immutable, you can't change the values in the pointers(read only), you can
+       change the values after making the pointer point to read-write memory 
+       (ex:- point to an array)
+4. Dangling pointer 
+    -> Dangling pointers occur if we are assigning a value to a freed pointer 
+       (assigning a value after freeing that pointer)
+5. Double free error
+    -> Trying to free a pointer that has already been freed, solution is to set pointer to NUll
+        after freeing the memory

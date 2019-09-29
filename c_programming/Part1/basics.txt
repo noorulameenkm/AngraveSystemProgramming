@@ -1,0 +1,11 @@
+1. What is typedef?
+    -> typedef is used to create aliases for a type, mostly used with structs, but we can use this
+       for all the types
+       ex:- 1. typedef float real (you can use real instead of floats)
+            2. typedef struct node Node (you can use Node instead of struct node)
+            3. typedef for a function
+               ->   typedef int (*comparator)(void*,void*);
+                    int greater_than(void* a, void* b){
+                        return a > b;
+                    }
+                    comparator gt = greater_than;
